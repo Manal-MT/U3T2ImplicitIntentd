@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="128dp">
+
+        <EditText
+            android:id="@+id/etUri"
+            android:layout_width="270dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/https_developer_android_com"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="@+id/guideline11"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btOpenUri"
+            android:layout_width="175dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="12dp"
+            android:text="Open Website"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toBottomOf="@+id/etUri"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="267dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Pont Fernando Reig Alcoi"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toBottomOf="@+id/btOpenUri"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btOpenLocation"
+            android:layout_width="173dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:text="Open Location"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toBottomOf="@+id/etLocation"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="264dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Hello from U3T2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toBottomOf="@+id/btOpenLocation"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btShareText"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:text="Share This Text"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toBottomOf="@+id/etText"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="452dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="7dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="371dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
